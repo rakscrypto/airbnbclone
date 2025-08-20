@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #333;
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* center everything else */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* center horizontally */
+  justify-content: center; /* center vertically */
+  min-height: 100vh;     /* full height of screen */
+  text-align: center;
+}
+.header-bar {
+  padding: 15px 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Hero */
+.help-hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f7f7f7;
+}
+
+.help-hero h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.search-help {
+  width: 60%;
+  max-width: 500px;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Nav */
+.help-nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.help-nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Welcome + Auth */
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 20px 40px;
+  width: 400px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+  background:#ff385c;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+
+/* Guides */
+.guides {
+  padding: 30px 50px;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.home-card {
+  min-width: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: white;
+  text-align: center;
+}
+
+.home-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Footer */
+.help-footer {
+  background: #f7f7f7;
+  padding: 30px 50px;
+  margin-top: 40px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+}
