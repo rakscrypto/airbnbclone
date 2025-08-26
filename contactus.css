@@ -1,0 +1,222 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background-color: #fff;
+    }
+
+    /* Header */
+   /* Header & Navbar */
+header {
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between; /* logo left, menu right */
+  align-items: center;            /* keeps everything on the same line */
+}
+
+.logo img {
+  height: 48px;
+  display: block; /* removes tiny bottom whitespace from inline images */
+}
+
+.user-menu {
+  display: flex;       /* line up items horizontally */
+  align-items: center; /* vertically center them */
+}
+
+.user-menu a {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  display: flex;        /* keeps icon/text aligned */
+  align-items: center;
+  text-decoration: none;
+  
+}
+
+.user-menu img {
+  height: 40px;
+  display: block;
+}
+
+    /* Search */
+   .search-bar-button {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.search-section {
+  position: relative;
+  margin: 0 auto;
+  width:400px;
+}
+.search-section input {
+  width: 100%;
+  height: 70px;
+  padding: 0 3.5rem 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+}
+.search-section input::placeholder {
+  color: #888;
+}
+.search-section input:focus {
+  outline: none;
+  border-color: #ff5a5f;
+  box-shadow: 0 0 0 3px rgba(255, 90, 95, 0.2);
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right:-45px;
+  transform: translateY(-50%);
+  background: #ff385c;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.search-icon img {
+  width: 18px;
+  height: 18px;
+}
+
+    /* Main Section */
+    .main {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .back-link {
+      color: #008489;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    h1 {
+      margin: 20px 0 10px;
+    }
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+    .btn {
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: 1px solid #008489;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    .btn-primary {
+      background-color: #008489;
+      color: white;
+    }
+    .btn-primary:hover {
+      background-color: #006f70;
+    }
+    .btn-outline {
+      background-color: white;
+      color: #008489;
+    }
+    .btn-outline:hover {
+      background-color: #f2f2f2;
+    }
+
+    /* Articles */
+    .articles {
+      border-top: 1px solid #ddd;
+      padding-top: 30px;
+    }
+    .articles h2 {
+      margin-bottom: 20px;
+    }
+    .article-columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .article-columns h3 {
+      margin-bottom: 10px;
+    }
+    .article-columns a {
+      display: block;
+      color: #008489;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+    .article-columns a:hover {
+      text-decoration: underline;
+    }
+    /* Footer */
+footer {
+  background-color: #f7f7f7;
+  padding: 40px;
+  font-size: 14px;
+  color: #444;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-columns h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-columns a {
+  display: block;
+  color: #444;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer-columns a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.footer-bottom a {
+  color: #444;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+}
+.footer-icons i {
+  cursor: pointer;
+}

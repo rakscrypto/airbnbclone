@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login or Sign Up | Airbnb</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      height: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      width: 100%;
+      max-width: 400px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    select, input[type="tel"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    input[type="submit"] {
+      background-color: #ff385c;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e03150;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      color: #717171;
+      margin-top: 5px;
+    }
+
+    .privacy {
+      font-size: 12px;
+      color: #717171;
+      margin-top: 10px;
+    }
+
+    .privacy a {
+      color: #222;
+      text-decoration: underline;
+    }
+
+    .alt-login {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .alt-login div {
+      margin: 15px 0;
+      font-size: 14px;
+      color: #717171;
+      position: relative;
+    }
+
+    .alt-login div::before, .alt-login div::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background-color: #ddd;
+    }
+
+    .alt-login div::before {
+      left: 0;
+    }
+
+    .alt-login div::after {
+      right: 0;
+    }
+
+    .alt-login a {
+      display: block;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 12px;
+      margin-top: 10px;
+      color: #222;
+      font-weight: 600;
+      text-decoration: none;
+      
+    }
+
+    .alt-login a:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Welcome to Airbnb</h2>
+
+    <form action="" method="post">
+      <select id="country" name="country">
+        <option value="us">United States (+1)</option>
+        <option value="ng">Nigeria (+234)</option>
+        <option value="gb">United Kingdom (+44)</option>
+        <option value="ca">Canada (+1)</option>
+        <option value="au">Australia (+61)</option>
+        <option value="in">India (+91)</option>
+        
+      </select>
+      <input type="tel" id="tel" name="phone" placeholder="Enter your phone number" required>
+
+      <div class="disclaimer">
+        We'll call or text you to confirm your number. Standard message and data rates apply.
+      </div>
+
+      <div class="privacy">
+        <a href="#">Privacy Policy</a>
+      </div>
+
+      <input type="submit" value="Continue">
+    </form>
+
+    <div class="alt-login">
+      <div>or</div>
+      <a href="https://www.google.com">Continue with Google</a>
+      <a href="https://www.apple.com">Continue with Apple</a>
+      <a href="https://www.gmail.com">Continue with Email</a>
+      <a href="https://www.facebook.com">Continue with Facebook</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,150 +1,442 @@
+/* General Reset & Typography */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Circular', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #333;
+  background-color: #fafafa;
+  line-height: 1.6;
   margin: 0;
-  background: #fff;
+}
+a {
+  text-decoration: none;
   color: #333;
 }
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
 }
 
-/* center everything else */
-.main-container {
+/* Header & Navbar */
+header {
+  background-color: white;
+  padding: 1rem 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;   /* center horizontally */
-  justify-content: center; /* center vertically */
-  min-height: 100vh;     /* full height of screen */
-  text-align: center;
-}
-.header-bar {
-  padding: 15px 30px;
-  border-bottom: 1px solid #eee;
+  justify-content: space-between; /* logo left, menu right */
+  align-items: center;            /* keeps everything on the same line */
 }
 
 .logo img {
-  height: 40px;
+  height: 48px;
+  display: block; /* removes tiny bottom whitespace from inline images */
 }
 
-/* Hero */
-.help-hero {
+.user-menu {
+  display: flex;       /* line up items horizontally */
+  align-items: center; /* vertically center them */
+}
+
+.user-menu a {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  display: flex;        /* keeps icon/text aligned */
+  align-items: center;
+}
+
+.user-menu img {
+  height: 48px;
+  display: block;
+}
+
+
+/* Main Title */
+main h1 {
   text-align: center;
-  padding: 40px 20px;
-  background: #f7f7f7;
+  font-size: 2.5rem;
+  margin: 2rem 0;
 }
 
-.help-hero h1 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-.search-help {
-  width: 60%;
-  max-width: 500px;
-  padding: 12px;
-  border-radius: 25px;
-  border: 1px solid #ccc;
-  outline: none;
-}
-
-/* Nav */
-.help-nav {
+/* Search Bar */
+.search-bar-button {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  padding: 15px;
-  border-bottom: 1px solid #eee;
+  margin: 2rem 0;
+}
+.search-section {
+  position: relative;
+  margin: 0 auto;
+  width:400px;
+}
+.search-section input {
+  width: 100%;
+  height: 70px;
+  padding: 0 3.5rem 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+}
+.search-section input::placeholder {
+  color: #888;
+}
+.search-section input:focus {
+  outline: none;
+  border-color: #ff5a5f;
+  box-shadow: 0 0 0 3px rgba(255, 90, 95, 0.2);
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right:-45px;
+  transform: translateY(-50%);
+  background: #ff385c;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.search-icon img {
+  width: 18px;
+  height: 18px;
 }
 
-.help-nav a {
-  text-decoration: none;
-  color: #444;
+/* Navigation */
+.main-nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  padding: 0.rem 2rem;
+  padding-left: 8rem;
+  margin: 0 auto 2rem;
+  border-bottom: 2px solid #eee;
+}
+.main-nav a {
+  position: relative;
   font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: 4px;
+}
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ff385c;
+  transition: width 0.3s ease;
+}
+.main-nav a:hover::after {
+  width: 100%;
 }
 
-/* Welcome + Auth */
-.welcome-section {
+/* Sign-up Section */
+.sign-up {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: left;
+  margin: 1.5rem auto;
+  max-width: 1050px;
+
+  display: flex;
+  justify-content: space-between; /* text left, button right */
+  align-items: center;
+}
+
+.sign-up-text {
+  display: flex;
+  flex-direction: column; /* stack label + subtext */
+}
+
+.sign-up .label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.sign-up .subtext {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.sign-up button {
+  background-color: #ff5a5f;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  min-width: 400px;
+  height: 60px;
+}
+
+.sign-up button:hover {
+  background-color: #e14d50;
+}
+
+
+
+/* Guides Section */
+/* Guides Section */
+.guides-section {
+  margin: 2rem auto;
+  max-width: 1100px;
+  padding: 0 1rem;
+}
+
+.guides-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 50px;
+  margin-bottom: 1.5rem;
 }
 
-.subtitle {
-  color: #777;
-  font-size: 0.9rem;
+.guides-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
 }
 
-.auth-buttons button {
-  margin-left: 10px;
-  padding: 20px 40px;
-  width: 400px;
-  border-radius: 20px;
-  border: 1px solid #ddd;
-  color: white;
-  cursor: pointer;
-  background:#ff385c;
-  font-weight: 700;
-  font-size: 20px;
+.guides-header a {
+  font-size: 0.95rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
 }
 
+.guides-header a:hover {
+  text-decoration: underline;
+}
 
-
-/* Guides */
+/* Grid of Guides */
 .guides {
-  padding: 30px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
 }
 
-.scroll-container {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 20px 0;
-}
-
-.home-card {
-  min-width: 200px;
+.guide-card {
+  background-color: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  background: white;
-  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
-.home-card img {
+.guide-card img {
   width: 100%;
-  height: 150px;
+  height: 160px; /* keeps all images equal */
+  object-fit: cover;
+  display: block;
+}
+
+/* Text below the card */
+.guide p {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: left; /* change to center if you want */
+}
+
+
+/* Articles */
+/* Section layout */
+.top-articles {
+  margin: 2rem auto;
+  max-width: 1100px;  /* keeps width fixed */
+  width: 100%;        /* ensures it shrinks nicely on smaller screens */
+  padding: 0 1rem;    /* small side padding */
+}
+
+/* Grid layout: 3 by 2 */
+.articles-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Headings */
+.article-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  text-decoration: underline; /* underline */
+  color: #000; /* black */
+}
+.article-item h2{
+  color: black;
+}
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* reduce space under heading */
+}
+
+/* Paragraphs */
+.article-item p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+}
+/* Full width black background */
+.explore-more {
+  background: #000;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+/* Centered content inside */
+.explore-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Title */
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid layout */
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Image cards */
+.explore-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+
+.explore-card img {
+  width: 100%;
+  display: block;
   object-fit: cover;
 }
 
-/* Footer */
-.help-footer {
-  background: #f7f7f7;
-  padding: 30px 50px;
-  margin-top: 40px;
+/* Text overlay */
+.card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: #181616;
+  color: #fff;
 }
 
-.footer-links {
+.card-text h3 {
+  font-size: 1rem;
+  margin: 0 0 0.25rem 0;
+  font-weight: 600;
+}
+
+.card-text p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #ddd;
+}
+
+/* Contact card */
+.contacts {
+  background: #030303;
+  color:black;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color:  #f3f3f3;
+}
+
+.contacts p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #faf8f8;
+}
+
+.contacts button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+  color:black;
+
+}
+.contacts button a {
+  color: black;         /* force link text inside button to be black */
+  text-decoration: none; /* remove underline */
+  display: block;       /* makes link fill the button */
+}
+
+
+.contacts button:hover {
+  background: #e6e6e6;
+}
+
+.contacts a {
+  color: #eeeeee;
+  text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+  background-color: white;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 2rem;
 }
-
-.footer-links h4 {
-  margin-bottom: 10px;
+.footer-columns div {
+  flex: 1;
+  min-width: 180px;
 }
-
-.footer-links ul {
+.footer-columns h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+.footer-columns ul {
   list-style: none;
   padding: 0;
 }
-
-.footer-links ul li {
-  margin-bottom: 8px;
+.footer-columns li {
+  margin-bottom: 0.5rem;
 }
-
-.footer-links a {
-  text-decoration: none;
-  color: #555;
+.footer-columns a:hover {
+  text-decoration: underline;
+}
+footer .end {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #888;
 }

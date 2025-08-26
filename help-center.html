@@ -3,116 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Airbnb Help Center Clone</title>
+  <title>Airbnb Help Center</title>
   <link rel="stylesheet" href="help-center.css">
 </head>
 <body>
-
-  <!-- Logo -->
-  <header class="header-bar">
+  <!-- Header -->
+  <header>
     <div class="logo">
-      <img src="https://1000logos.net/wp-content/uploads/2017/08/Airbnb-logo.jpg" alt="Airbnb Logo">
+      <img src="Screenshot 2025-08-26 094814.png" alt="Airbnb Logo">
     </div>
+    <nav class="user-menu" aria-label="User menu">
+      <a href="#" aria-label="Change language">🌐</a>
+      <a href="#"><img src="Screenshot 2025-08-26 094837.png" alt="A"></a>
+    </nav>
   </header>
-   <div class="main-container">
 
-  <!-- Hero Section -->
-  <section class="help-hero">
+  <main>
+    <!-- Main Title -->
     <h1>Hi, how can we help?</h1>
-    <input type="search" placeholder="Search help articles..." class="search-help">
-  </section>
 
-  <!-- Navigation Tabs -->
-  <nav class="help-nav">
-    <a href="#">Guest</a>
-    <a href="#">Home Host</a>
-    <a href="#">Experience Host</a>
-    <a href="#">Service Host</a>
-    <a href="#">Travel Admin</a>
-  </nav>
-
-  <!-- Welcome + Login/Signup -->
-  <section class="welcome-section">
-    <div class="welcome-text">
-      <h2>We are here for you</h2>
-      <p class="subtitle">Login to get help with your reservations, account, and more</p>
-    </div>
-    <div class="auth-buttons">
-      <button class="login-btn">Log in or sign up</button>
-     
-    </div>
-  </section>
-
-  <!-- Guides -->
-  <section class="guides">
-    <h2>Guides for Getting Started</h2>
-    <p class="browse">Browse all topics</p>
-    <div class="scroll-container">
-      <div class="home-card">
-        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/bltfbcc7f32e0cd6ff5/getting-started-on-airbnb-optimized.jpg" alt="">
-        <p>Getting started on Airbnb</p>
-      </div>
-      <div class="home-card">
-        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt7b9def132e4aa927/help-with-a-reservation-optimized.jpg" alt="">
-        <p>Help with a reservation</p>
-      </div>
-      <div class="home-card">
-        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt5912675266dfa56f/AC_Guests_HG_EN_S@3x.png" alt="">
-        <p>Account and profile</p>
-      </div>
-      <div class="home-card">
-        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/bltc2c41caec93eaf03/help-with-hosting-optimized.jpg" alt="">
-        <p>Help with hosting</p>
+    <!-- Search -->
+    <div class="search-bar-button">
+      <div class="search-section">
+        <input type="text" placeholder="Search how-tos and more">
+        <div class="search-icon">
+          <img src="search.png" alt="Search Icon">
+        </div>
       </div>
     </div>
-  </section>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <a href="#">Guest</a>
+      <a href="#">Home host</a>
+      <a href="#">Experiences host</a>
+      <a href="#">Service host</a>
+      <a href="#">Travel admin</a>
+    </nav>
+
+   <!-- Sign up -->
+<div class="sign-up">
+  <div class="sign-up-text">
+    <span class="label">We’re here for you</span>
+    <p class="subtext">Log in to get help with your reservations, account, and more.</p>
   </div>
-  <div>
-    <section class="Explore">
-        <h2>Explore more</h2>
-        <div class="scroll-container">
-      <div class="home-card">
-        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt6a2935c750dda8a0/6179c6499778eb18575b3c0b/Airbnb-Policy-Web.png" alt="">
-        <p>Our community policies</p>
-        <p class="subtitle">How we build a foundation of trust</p>
+  <button><a href="another.html">Log in or Sign up</a></button>
+</div>
+
+
+   <!-- Guides -->
+    <section class="guides-section">
+  <div class="guides-header">
+    <h2>Guides for getting started</h2>
+    <a href="#">Browse all topics &gt;</a>
+  </div>
+
+  <div class="guides">
+    <div class="guide">
+      <div class="guide-card">
+        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt7b9def132e4aa927/help-with-a-reservation-optimized.jpg" alt="Managing reservations">
       </div>
-      <div class="home-card">
-        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt93efaa7b7d28041c/Airbnb-Safety-Web.png" alt="">
-        <p>Safety tips and guidelines</p>
-        <p class="subtitle">Resources to help travelers stay safe</p>
+      <p>Managing your reservation: payments, changes, and cancellations</p>
+    </div>
+
+    <div class="guide">
+      <div class="guide-card">
+        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt5912675266dfa56f/AC_Guests_HG_EN_S@3x.png" alt="AirCover for guests">
+      </div>
+      <p>AirCover for guests</p>
+    </div>
+
+    <div class="guide">
+      <div class="guide-card">
+        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/bltc2c41caec93eaf03/help-with-hosting-optimized.jpg" alt="Hosting resources">
+      </div>
+      <p>Essential resources for new hosts</p>
+    </div>
+
+    <div class="guide">
+      <div class="guide-card">
+        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt7af0ed915470bd33/how-reviews-work-optimized.jpg" alt="Guide for new guests">
+      </div>
+      <p>Getting started as a guest on Airbnb</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Top Articles -->
+    <section class="top-articles">
+      
+        <h2>Top articles</h2>
+        <div class="articles-list">
+          <div class="article-item">
+            <h3><a href="">Cancel your home reservation as a guest</a></h3>
+            <p>Your plans have changed and now you need to cancel your home reservation. No problem.</p>
+          </div>
+          <div class="article-item">
+            <h3><a href="#">Change the date or time of your service or experience reservation</a></h3>
+            <p>If you booked a service or experience, but the date or time no longer works for you, don't worry.</p>
+          </div>
+          <div class="article-item">
+            <h3><a href="">If your host cancels your home reservation</a></h3>
+            <p>While it's rare, sometimes a host may need to cancel a reservation. We understand this can be frustrating.</p>
+          </div>
+          <div class="article-item">
+            <h3><a href="">Add or remove a payment method</a></h3>
+            <p>If an existing payment method on your account is incorrect (ex: an expired credit card), you can update it.</p>
+          </div>
+          <div class="article-item">
+            <h3><a href="">When you'll pay for your reservation</a></h3>
+            <p>Want to know when you'll be charged for a reservation? It all depends on the type of reservation you make.</p>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- Explore More -->
+<section class="explore-more">
+  <div class="explore-container">
+    <h2 class="section-title">Explore more</h2>
+    <div class="explore-grid">
+      <!-- Card 1 -->
+      <div class="explore-card">
+        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt6a2935c750dda8a0/6179c6499778eb18575b3c0b/Airbnb-Policy-Web.png" alt="Community policies">
+        <div class="card-text">
+          <h3>Our community policies</h3>
+          <p>How we build a foundation of trust</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="explore-card">
+        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt93efaa7b7d28041c/Airbnb-Safety-Web.png" alt="Safety tips">
+        <div class="card-text">
+          <h3>Safety tips and guidelines</h3>
+          <p>Resources to help travelers stay safe</p>
+        </div>
+      </div>
+
+      <!-- Contact Card -->
+      <div class="contacts explore-card">
+        <h3>Need to get in touch?</h3>
+        <p>We'll start with some questions and get you to the right place.</p>
+        <button><a href="contactus.html">Contact Us</a></button>
+        <p>You can also <a href="#">give us feedback</a></p>
+      </div>
+    </div>
   </div>
+</section>
+
+  </main>
 
   <!-- Footer -->
-  <footer class="help-footer">
-    <div class="footer-links">
+  <footer>
+    <div class="footer-columns">
       <div>
-        <h4>Support</h4>
+        <h3>Support</h3>
         <ul>
           <li><a href="#">Help Center</a></li>
           <li><a href="#">AirCover</a></li>
-          <li><a href="#">Safety information</a></li>
+          <li><a href="#">Anti-discrimination</a></li>
+          <li><a href="#">Disability support</a></li>
+          <li><a href="#">Cancellation options</a></li>
+          <li><a href="#">Report neighborhood concern</a></li>
         </ul>
       </div>
       <div>
-        <h4>Hosting</h4>
+        <h3>Hosting</h3>
         <ul>
-          <li><a href="#">Try hosting</a></li>
+          <li><a href="#">Airbnb your home</a></li>
           <li><a href="#">AirCover for Hosts</a></li>
-          <li><a href="#">Explore hosting resources</a></li>
+          <li><a href="#">Hosting resources</a></li>
+          <li><a href="#">Community forum</a></li>
+          <li><a href="#">Hosting responsibility</a></li>
+          <li><a href="#">Airbnb-friendly apartments</a></li>
+          <li><a href="#">Join a free hosting class</a></li>
+          <li><a href="#">Find a co-host</a></li>
         </ul>
       </div>
       <div>
-        <h4>Airbnb</h4>
+        <h3>Airbnb</h3>
         <ul>
           <li><a href="#">Newsroom</a></li>
-          <li><a href="#">Investors</a></li>
+          <li><a href="#">News features</a></li>
           <li><a href="#">Careers</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Gift cards</a></li>
+          <li><a href="#">Airbnb.org emergency stays</a></li>
         </ul>
       </div>
     </div>
+    <span class="end">&copy; Designed by Rakin Momodu Oshioke</span>
   </footer>
-
 </body>
 </html>
